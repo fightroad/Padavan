@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        target: [RT-AC85P]
+        target: [K2P-USB]
         toolchain: [mipsel-linux-musl]
     steps:
       - uses: actions/checkout@v3
@@ -31,14 +31,14 @@ jobs:
       - name: Build
         run: |
           make ${{ matrix.target }} TOOLCHAIN=${{ matrix.toolchain }}
-          if [ "${{ matrix.target }}" = "K2P-NANO" ]; then
-            image=$(ls trunk/images/*.trx)
-            mv $image $(echo $image | sed 's/K2P/K2P-NANO/')
+          if [ "${{ matrix.target }}" = "K2P-USB" ]; then
+            image=$(ls trunk/images/K2P-USB.trx)
+            mv $image $(echo $image | sed 's/K2P/K2P-USB/')
           fi
       - uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.toolchain }}
-          path: trunk/images/*.trx
+          path: trunk/images/K2P-USB.trx
   publish:
     needs: [build]
     runs-on: ubuntu-22.04

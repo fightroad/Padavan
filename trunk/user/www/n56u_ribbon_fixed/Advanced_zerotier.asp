@@ -45,6 +45,7 @@ if(m_list.length > 0){
 		m_list[i][mlist_ifield] = i;
 	}
 }
+
 var isMenuopen = 0;
 function initial(){
 	show_banner(2);
@@ -52,8 +53,12 @@ function initial(){
 	showmenu();
 	fill_status(zerotier_status());
 	showMRULESList();
+	showmenu();
+	fill_status(zerotier_status());
+	showMRULESList();
 	show_footer();
 }
+
 
 function showmenu(){
 showhide_div('allink', found_app_aliddns());
@@ -221,7 +226,6 @@ function showMRULESList(){
 									<a href="https://my.zerotier.com/network" target="_blank" style="text-decoration: underline; font-weight: bold;">Zerotier官网设置入口</a>
 									</p>
 									</div>
-
 									<table width="100%" align="center" cellpadding="4" cellspacing="0" class="table">
 									<tr> <th><#running_status#></th>
                                             <td id="zerotier_status" colspan="3"></td>
@@ -282,9 +286,7 @@ function showMRULESList(){
 			</div>
 		</div>
 	</div>
-
 	</form>
-
 	<div id="footer"></div>
 </div>
 </body>

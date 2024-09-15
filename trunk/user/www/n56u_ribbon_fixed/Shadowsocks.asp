@@ -1694,20 +1694,11 @@ setTimeout('document.getElementById("btn_ctime").style.display="none";',1000);
 													<tr>
 														<th width="50%">运行模式：</th>
 														<td>
-															<select name="ss_run_mode" id="ss_run_mode" class="input"
-																style="width: 200px;">
-																<option value="gfw"
-																	<% nvram_match_x("","ss_run_mode", "gfw","selected"); %>>
-																	gfw列表模式</option>
-																<option value="router"
-																	<% nvram_match_x("","ss_run_mode", "router","selected"); %>>
-																	绕过大陆IP模式</option>
-																<!--<option value="all"
-																	<% nvram_match_x("","ss_run_mode", "all","selected"); %>>
-																	全局模式</option>
-																<option value="oversea"
-																	<% nvram_match_x("","ss_run_mode", "oversea","selected"); %>>
-																	海外用户回国模式</option>-->
+															<select name="ss_run_mode" id="ss_run_mode" class="input" style="width: 200px;">
+																<option value="gfw" <% nvram_match_x("","ss_run_mode", "gfw","selected"); %>>gfw列表模式</option>
+																<option value="router" <% nvram_match_x("","ss_run_mode", "router","selected"); %>>绕过大陆IP模式</option>
+																<option value="all" <% nvram_match_x("","ss_run_mode", "all","selected"); %>>全局模式</option>
+																<option value="oversea" <% nvram_match_x("","ss_run_mode", "oversea","selected"); %>>海外用户回国模式</option>
 															</select>
 														</td>
 													</tr>
@@ -1732,10 +1723,9 @@ setTimeout('document.getElementById("btn_ctime").style.display="none";',1000);
 													<tr id="row_pdnsd_enable">
 														<th width="50%">DNS代理解析方式：(推荐dnsproxy)</th>
 														<td>
-															<select name="pdnsd_enable" id="pdnsd_enable" class="input"
-																style="width: 200px;" onchange="switch_dns()">
-																<option value="0">使用dns2tcp查询</option>
-																<!--<option value="1">使用其它服务器查询</option>-->
+															<select name="pdnsd_enable" id="pdnsd_enable" class="input" style="width: 200px;" onchange="switch_dns()">
+																<option value="0">使用dnsproxy查询</option>
+																<option value="1">使用dns2tcp查询</option>
 															</select>
 														</td>
 													</tr>
@@ -1769,36 +1759,21 @@ setTimeout('document.getElementById("btn_ctime").style.display="none";',1000);
 													<tr id="row_tunnel_forward" style="display:none;">
 														<th width="50%">国外DNS：</th>
 														<td>
-															<select name="tunnel_forward" class="input"
-																style="width: 200px;">
-																<option value="8.8.8.8#53">Google Public DNS (8.8.8.8)
-																</option>																
-																<option value="8.8.4.4#53">Google Public DNS (8.8.4.4)
-																</option>
-																<option value="208.67.222.222#53">OpenDNS
-																	(208.67.222.222)</option>
-																<option value="208.67.220.220#53">OpenDNS
-																	(208.67.220.220)</option>
-																<option value="209.244.0.3#53">Level 3 Public DNS
-																	(209.244.0.3)</option>
-																<option value="209.244.0.4#53">Level 3 Public DNS
-																	(209.244.0.4)</option>
-																<option value="4.2.2.1#53">Level 3 Public DNS (4.2.2.1)
-																</option>
-																<option value="4.2.2.2#53">Level 3 Public DNS (4.2.2.2)
-																</option>
-																<option value="4.2.2.3#53">Level 3 Public DNS (4.2.2.3)
-																</option>
-																<option value="4.2.2.4#53">Level 3 Public DNS (4.2.2.4)
-																</option>
-																<option value="1.1.1.1#53">Cloudflare DNS (1.1.1.1)
-																</option>
-																<option value="1.0.0.1#53">Cloudflare DNS (1.0.0.1)
-																</option>
-																<option value="114.114.114.114#53">Oversea Mode DNS-1
-																	(114.114.114.114)</option>
-																<option value="114.114.115.115#53">Oversea Mode DNS-1
-																	(114.114.115.115)</option>
+															<select name="tunnel_forward" class="input" style="width: 200px;">
+																<option value="1.1.1.1#53">Cloudflare DNS (1.1.1.1)</option>
+																<option value="1.0.0.1#53">Cloudflare DNS (1.0.0.1)</option>
+																<option value="4.2.2.1#53">Level 3 Public DNS (4.2.2.1)</option>
+																<option value="4.2.2.2#53">Level 3 Public DNS (4.2.2.2)</option>
+																<option value="4.2.2.3#53">Level 3 Public DNS (4.2.2.3)</option>
+																<option value="4.2.2.4#53">Level 3 Public DNS (4.2.2.4)</option>
+																<option value="8.8.4.4#53">Google Public DNS (8.8.4.4)</option>
+																<option value="8.8.8.8#53">Google Public DNS (8.8.8.8)</option>
+																<option value="208.67.222.222#53">OpenDNS (208.67.222.222)</option>
+																<option value="208.67.220.220#53">OpenDNS (208.67.220.220)</option>
+																<option value="209.244.0.3#53">Level 3 Public DNS (209.244.0.3)</option>
+																<option value="209.244.0.4#53">Level 3 Public DNS (209.244.0.4)</option>
+																<option value="114.114.114.114#53">Oversea Mode DNS(114.114.114.114)</option>
+																<option value="114.114.115.115#53">Oversea Mode DNS(114.114.115.115)</option>
 															</select>
 														</td>
 													</tr>

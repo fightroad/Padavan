@@ -1,12 +1,12 @@
 # padavan #
 
-### 基于TSL大佬的padavan4.4版本，做了一些自己的优化。
+### 基于TSL大佬的padavan4.4版本。
 
-默认信息如下
-ip：192.168.2.1
-账号：admin
-密码：admin
-wifi密码：1234567890
+- 默认信息如下
+- ip：192.168.2.1
+- 账号：admin
+- 密码：admin
+- wifi密码：1234567890
 
 This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which is fetch from D-LINK GPL code.
 

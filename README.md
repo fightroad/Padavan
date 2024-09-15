@@ -1,6 +1,6 @@
 # padavan #
 
-### 基于TSL大佬的padavan4.4版本。
+### 基于tsl0922和TurBoTse大佬的padavan4.4版本。
 
 - 默认信息如下
 - ip：192.168.2.1

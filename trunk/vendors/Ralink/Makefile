@@ -1,4 +1,4 @@
-IMAGE_AUTHOR	= TurBoTse
+IMAGE_AUTHOR	= fightroad
 IMAGE_TIME	= `TZ='Asia/Shanghai' date +%Y%m%d`
 KERNELZ		= $(IMAGEDIR)/zImage
 RAMDISK		= $(IMAGEDIR)/ramdisk

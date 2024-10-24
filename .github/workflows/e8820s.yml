@@ -1,4 +1,4 @@
-name: build
+name: build-ZTE-E8820S
 
 on: 
   #push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        target: [K2P,RT-AC85P,CR660x]
+        target: [ZTE-E8820S]
         toolchain: [mipsel-linux-musl]
     steps:
       - uses: actions/checkout@v3
